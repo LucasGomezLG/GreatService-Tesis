@@ -1,0 +1,35 @@
+
+###
+GET http://localhost:8000/api/persona/all HTTP/1.1
+
+###
+
+GET http://localhost:8000/api/persona/2 HTTP/1.1
+
+###
+
+POST http://localhost:8000/api/persona/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "tipodoc_per": 1,
+    "nrodoc_per": 35147312,
+    "nombre_per": "adrian",
+    "apellido_per": "lagonegro",
+    "genero_per": 1
+}
+
+###
+DELETE http://localhost:8000/api/persona/delete/14 HTTP/1.1
+
+###
+PUT http://localhost:8000/api/persona/update/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "tipodoc_per": 1,
+    "nrodoc_per": 35147312,
+    "nombre_per": "Lucas",
+    "apellido_per": "Gomez",
+    "genero_per": 1
+}

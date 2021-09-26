@@ -1,0 +1,30 @@
+###
+GET http://localhost:8000/api/usuario/all HTTP/1.1
+
+###
+GET http://localhost:8000/api/usuario/0 HTTP/1.1
+
+###
+POST http://localhost:8000/api/usuario/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "idper_usu": 0,
+    "name_usu": "alagonegro",
+    "pass_usu": "123",
+    "estado_usu": 1
+}
+
+###
+DELETE http://localhost:8000/api/usuario/delete/1 HTTP/1.1
+
+###
+PUT http://localhost:8000/api/usuario/update/0 HTTP/1.1
+Content-Type: application/json
+
+{
+    "idper_usu": 0,
+    "name_usu": "asdfasdf",
+    "pass_usu": "123",
+    "estado_usu": 1
+}
